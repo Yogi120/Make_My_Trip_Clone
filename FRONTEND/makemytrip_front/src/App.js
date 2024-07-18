@@ -29,7 +29,7 @@ import Admin from "./component/Admin/Admin";
 
 function App() {
   
-  let apiBaseUrl = "https://make-my-trip-clone-silk.vercel.app/";
+  let apiBaseUrl = "https://make-my-trip-clone-omega.vercel.app/";
 
   const [to, setTo] = useState("");
   const [from, setFrom] = useState("");
