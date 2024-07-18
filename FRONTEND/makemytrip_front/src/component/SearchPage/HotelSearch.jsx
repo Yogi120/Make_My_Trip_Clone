@@ -49,7 +49,7 @@ export const HotelSearch = () => {
   const fetchHotels = async (city) => {
     setLocation(city)
     try {
-      const response = await fetch(`https://make-my-trip-clone-backend.vercel.app/api/searchHotel?city=${city}`);
+      const response = await fetch(`https://make-my-trip-clone-omega.vercel.app/api/searchHotel?city=${city}`);
       if (response.ok) {
         const result = await response.json();
         setData(result); // Update state with fetched hotel data
