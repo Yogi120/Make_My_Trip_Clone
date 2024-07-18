@@ -35,3 +35,6 @@ app.use('/api/searchFlight', require('./routes/searchFlightRoutes'));
 app.use('/api/searchHotel', require('./routes/searchHotelRoutes'));
 app.use('/api', require('./routes/bookingRoutes'));
 app.use('/api', hotelBookingRoutes);
+
+
+module.exports = app;
