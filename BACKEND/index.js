@@ -16,7 +16,7 @@ app.use(express.json({ extended: false }));
 
 
 app.use(cors({
-    origin: 'https://make-my-trip-clone-j87f.vercel.app',
+    origin: 'https://make-my-trip-clone-dehf.vercel.app',
     // origin: 'https://make-my-trip-clone-six.vercel.app',
     credentials: true 
   }));
