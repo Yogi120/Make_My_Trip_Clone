@@ -1,6 +1,8 @@
 const Booking = require('../model/Booking');
 const Flight = require('../model/Flight');
 
+
+// Create Bookings
 exports.createBooking = async (req, res) => {
     const { flightId, passengerName, passengerEmail, passengerPhone, numberOfTickets } = req.body;
 
@@ -29,6 +31,8 @@ exports.createBooking = async (req, res) => {
     }
 };
 
+
+// Get Booking details
 exports.getBooking = async (req, res) => {
     try {
         const booking = await Booking.findById(req.params.id).populate('flightId');
@@ -43,6 +47,8 @@ exports.getBooking = async (req, res) => {
     }
 };
 
+
+// Cancel Booking 
 exports.cancelBooking = async (req, res) => {
     try {
         const booking = await Booking.findById(req.params.id);

@@ -9,22 +9,24 @@ const app = express();
 
 const start = async () => {
     await connectDB();
-    app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+    app.listen(port, () => console.log(`Node app running on port ${port}!`));
 };
 start();
 app.use(express.json({ extended: false }));
 
 
-//app.use(cors());
 app.use(cors({
-    origin: 'https://make-my-trip-clone-six.vercel.app', // Replace with your React app's domain
-    credentials: true // Allow cookies for authenticated requests (if applicable)
+    origin: 'http://localhost:3000',
+    // origin: 'https://make-my-trip-clone-six.vercel.app',
+    credentials: true 
   }));
 
-// Define Routes
+//  Routes Defining
 app.get('/',(req,res)=>{
   res.send('server running')
 })
+
+
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/admin/flights', require('./routes/flightRoutes'));
 app.use('/api/admin/hotels', require('./routes/hotelRoutes'));
@@ -33,6 +35,3 @@ app.use('/api/searchFlight', require('./routes/searchFlightRoutes'));
 app.use('/api/searchHotel', require('./routes/searchHotelRoutes'));
 app.use('/api', require('./routes/bookingRoutes'));
 app.use('/api', hotelBookingRoutes);
-// const PORT = process.env.PORT || 5000;
-
-// app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

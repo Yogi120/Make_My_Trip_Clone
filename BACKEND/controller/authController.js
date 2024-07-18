@@ -44,6 +44,7 @@ console.log(user);
 };
 
 
+// User Login
 exports.login = async (req, res) => {
     const { email, password } = req.body;
 
