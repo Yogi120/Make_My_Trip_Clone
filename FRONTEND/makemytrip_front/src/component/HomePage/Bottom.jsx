@@ -91,7 +91,7 @@ export const Bottom = ()=>{
         <div><TwitterIcon/></div>
     </div>
     <div className="copy">
-        <p>© 2021 MAKEMYTRIP PVT. LTD.</p>
+        <p>© 2024 MAKEMYTRIP PVT. LTD.</p>
         <p>Country India USA UAE</p>
     </div>
 </div>
