@@ -121,14 +121,6 @@ export const Header = () => {
             </span>
             <p>Homestays</p>
           </div>
-          <div onClick={() => handleIconClick("/Holidaypackages")}>
-            <span>
-              <HolidayVillageIcon
-                style={{ fontSize: 30, padding: 4 }}
-              ></HolidayVillageIcon>
-            </span>
-            <p>Hoiday packages</p>
-          </div>
           <div onClick={() => handleIconClick("/Trains")}>
             <span>
               <TrainIcon style={{ fontSize: 30, padding: 4 }}></TrainIcon>
@@ -166,14 +158,6 @@ export const Header = () => {
               ></FlightTakeoffIcon>
             </span>
             <p>Charter flights</p>
-          </div>
-          <div onClick={() => handleIconClick("/Activities")}>
-            <span>
-              <DownhillSkiingIcon
-                style={{ fontSize: 30, padding: 4 }}
-              ></DownhillSkiingIcon>
-            </span>
-            <p>Activities</p>
           </div>
         </div>
         <div className="login">
